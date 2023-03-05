@@ -2,6 +2,12 @@
   font-size: 18px !important;
   padding: 2px 0px !important;
 }
+.likeBtn {
+  background: none;
+  border: none;
+  cursor: pointer; 
+  outline: none;
+}
 .likeIcon {
   color: #ff0000 !important;
   font-size: 20px !important;

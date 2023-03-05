@@ -109,9 +109,13 @@ const User = ({ user, updateUserData, deleteUser }) => {
         style={{ margin: 15 }}
         actions={[
           liked ? (
-            <HeartFilled className={style.likeIcon} onClick={handleLike} />
+            <button className={style.likeBtn} onClick={handleLike}>
+                <HeartFilled className={style.likeIcon} />
+            </button>
           ) : (
-            <HeartOutlined className={style.likeIcon} onClick={handleLike} />
+            <button className={style.likeBtn} onClick={handleLike}>
+                <HeartOutlined className={style.likeIcon} />
+            </button>
           ),
 
           <EditOutlined className={style.icon} onClick={openModal} />,
